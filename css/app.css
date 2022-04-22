@@ -361,7 +361,7 @@ img {
 .contenido-nosotros {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-columns: repeat(auto-fit, minmax( 25rem,  ));
+    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ));
     column-gap: 4rem;
 }
 
@@ -369,6 +369,13 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .informacion-nosotros {
+        padding: 0;
+    }
 }
 
 /* Blog */
